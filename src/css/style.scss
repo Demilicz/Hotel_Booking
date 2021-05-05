@@ -127,15 +127,22 @@
     position: relative;
     .header__count {
       position: absolute;
-      display: none;
+      color: white;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 13px;
       background: #EC1F46;
       bottom: 15px;
       left: 14px;
       border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 20px;
       height: 20px;
     }
   }
+
 
   &__user {
     display: flex;
@@ -201,6 +208,245 @@
     padding-top: 18px;
     font-size: 10px;
     line-height: 13px;
+  }
+}
+
+.flash-hotel {
+
+  margin-top: 43px;
+
+  .container{
+    width: 100%;
+    max-width: 1150px;
+  }
+
+  &__up {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__stars {
+    margin-bottom: 5px;
+    i {
+      color: rgba(242, 153, 74, 1);
+    }
+  }
+
+  &__title {
+    font-family: 'Mulish';
+    font-weight: bold;
+    font-size: 24px;
+    position: relative;
+    &::after {
+      content: 'Flash Offer';
+      position: absolute;
+      max-width: 70px;
+      width: 100%;
+      font-weight: 600;
+      font-size: 10px;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 4px 9px;
+      background: #EC1F46;
+      border-radius: 3px;
+      bottom: 3px;
+      right:40px;
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Mulish';
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 5px;
+  }
+
+  &__user-rattings {
+    max-width: 65px;
+    max-height: 45px;
+    background: #EC1F46;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 8px;
+    padding:  6px;
+    line-height: 10px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__score {
+
+    p {
+      font-weight: 700;
+      font-size: 14px;
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.flash-hotel {
+
+
+  &__down {
+    display: flex;
+    color: #FFFFFF;
+    font-family: 'Nunito';
+    margin-top: 20px;
+  }
+
+  &__picture {
+    border-radius: 8px;
+    max-width: 728px;
+    max-height: 450px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 34px;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+      top: 0px;
+      left: 0px;
+    }
+  }
+
+  &__right-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__info {
+    background: #0A223D;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 26px 26px 26px;
+    max-width: 347px;
+    max-height: 210px;
+    margin-bottom: 27px;
+  }
+
+  &__info-left {
+    flex: 0 0 50%;
+  }
+
+  &__price {
+    margin: 43px 0 21px 0;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    position: relative;
+    &::after {
+      content: 'price starts as';
+      position: absolute;
+      font-size: 10px;
+      line-height: 14px;
+      top: -15px;
+      left: 0px;
+    }
+    &::before {
+      content: 'per room / night';
+      position: absolute;
+      font-size: 10px;
+      line-height: 14px;
+      bottom: -15px;
+      left: 0px;
+    }
+  }
+
+  &__price-title{
+    margin-bottom: 17px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__info-right {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__guests {
+    margin-top: 33px;
+    margin-bottom: 8px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      font-size: 30px;
+      background-image: url('../images/SVG/user.svg');
+      background-repeat: no-repeat;
+      top: 2px;
+      left: -22px;
+    }
+  }
+
+  &__room {
+    margin-bottom: 24px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      font-size: 30px;
+      background-image: url('../images/SVG/home.svg');
+      background-repeat: no-repeat;
+      top: 2px;
+      left: -29px;
+    }
+  }
+
+  &__calls {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      font-size: 30px;
+      background-image: url('../images/SVG/phone-call.svg');
+      background-repeat: no-repeat;
+      top: 5px;
+      left: -25px;
+    }
+  }
+
+  &__btn-other-options {
+    flex: 0 0 100%;
+    background: #EC1F46;
+    border-radius: 4px;
+    font-family: 'Nunito';
+    padding: 13px 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+
+  &__map {
+    max-width: 347px;
+    max-height: 213px;
+    border-radius: 10px;
+    overflow: hidden;
   }
 }
 

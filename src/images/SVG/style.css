@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icons';
   src:
-    url('fonts/icons.ttf?jv0oyk') format('truetype'),
-    url('fonts/icons.woff?jv0oyk') format('woff'),
-    url('fonts/icons.svg?jv0oyk#icons') format('svg');
+    url('fonts/icons.ttf?nmsju8') format('truetype'),
+    url('fonts/icons.woff?nmsju8') format('woff'),
+    url('fonts/icons.svg?nmsju8#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -33,51 +33,63 @@
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
-._icon-arrow_next:before {
+._icon-cheak1 .path1:before {
   content: "\e902";
+  color: rgb(51, 51, 51);
 }
-._icon-arrow_prev:before {
+._icon-cheak1 .path2:before {
   content: "\e903";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
 }
 ._icon-arrow_down:before {
   content: "\e904";
 }
-._icon-calendar:before {
+._icon-arrow_next:before {
   content: "\e905";
 }
-._icon-email:before {
+._icon-arrow_prev:before {
   content: "\e906";
 }
-._icon-facebook:before {
+._icon-calendar:before {
   content: "\e907";
 }
-._icon-gift:before {
+._icon-email:before {
   content: "\e908";
 }
-._icon-instagram:before {
+._icon-facebook:before {
   content: "\e909";
 }
-._icon-map-pin:before {
+._icon-gift:before {
   content: "\e90a";
 }
-._icon-phone-call:before {
+._icon-home:before {
   content: "\e90b";
 }
-._icon-search:before {
+._icon-instagram:before {
   content: "\e90c";
 }
-._icon-shopping-cart:before {
+._icon-map-pin:before {
   content: "\e90d";
 }
-._icon-star:before {
+._icon-phone-call:before {
   content: "\e90e";
 }
-._icon-star_solid:before {
+._icon-search:before {
   content: "\e90f";
 }
-._icon-user:before {
+._icon-shopping-cart:before {
   content: "\e910";
 }
-._icon-youtube:before {
+._icon-star:before {
   content: "\e911";
+}
+._icon-star_solid:before {
+  content: "\e912";
+}
+._icon-user:before {
+  content: "\e913";
+}
+._icon-youtube:before {
+  content: "\e914";
 }
