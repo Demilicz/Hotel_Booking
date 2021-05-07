@@ -489,6 +489,10 @@
     color: #333333
   }
 
+  &__block-container {
+    max-height: 828px;
+  }
+
   &__block {
     display: flex;
     flex-direction: column;
@@ -607,7 +611,211 @@
   &__down {
     display: flex;
   }
+
+  &__lorem {
+    margin: 30% 100px;
+    text-align: center;
+    font-weight: 600;
+  }
 }
+
+.packages {
+
+  background: rgba(245, 250, 254, 1);
+
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 105px 0 65px 0;
+  }
+
+  &__container {
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  &__main-card {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+  }
+
+  &__main-card-img {
+    position: relative;
+  }
+
+  &__main-card-flash {
+    position: absolute;
+    width: 95px;
+    padding: 8px 11px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    background: #EC1F46;
+    border-radius: 0px 4px 4px 0px;
+    top: 26px;
+    left: 0;
+  }
+
+  &__main-card-info {
+    background: rgba(10, 34, 61, 1);
+    padding: 47px 21px 30px 44px;
+    border-radius: 0px 8px 8px 0px;
+
+  }
+
+  &__main-card-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+  }
+
+  &__main-card-text {
+    font-size: 14px;
+    line-height: 160.6%;
+    color: #FFFFFF;
+    margin-bottom: 34px;
+  }
+
+  &__location {
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      font-size: 30px;
+      background-image: url('../images/SVG/map-pin.svg');
+      background-repeat: no-repeat;
+      top: 0px;
+      left:-2px;
+    }
+  }
+
+  &__guests {
+    padding-left: 20px;
+    margin: 5px 0;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      font-size: 30px;
+      background-image: url('../images/SVG/user.svg');
+      background-repeat: no-repeat;
+      top: 0px;
+      left:-2px;
+    }
+  }
+
+  &__room {
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      font-size: 30px;
+      background-image: url('../images/SVG/home.svg');
+      background-repeat: no-repeat;
+      top: 0px;
+      left:-2px;
+    }
+
+  }
+
+  &__down {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
+  &__old-price {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 5px;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+
+  &__button {
+    background: #EC1F46;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 0 25px;
+    border: 2px solid #EC1F46;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      color: #EC1F46;
+      background: transparent;
+    }
+  }
+
+  &__card {
+    background: rgba(10, 34, 61, 1);
+    border-radius: 8px;
+  }
+
+  &__card-info {
+    padding: 32px 30px 21px 25px;
+  }
+
+  &__card-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 23px;
+  }
+
+  &__img {
+    position: relative;
+  }
+
+  &__flash {
+    position: absolute;
+    background: #EC1F46;
+    padding: 4px 9px;
+    border-radius: 0px 4px 4px 0px;
+    top: 26px;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    color: #FFFFFF;
+  }
+}
+
+
 
 
 

@@ -1,14 +1,19 @@
-const tab1 = document.querySelector('.');
-const tab2 = document.querySelector('.');
-const tab3 = document.querySelector('.');
+const tab1 = document.querySelector('._summery');
+const tab2 = document.querySelector('._information');
+const tab3 = document.querySelector('._rooms');
 
-const blocksList = document.querySelectorAll('.');
-const tabsList = document.querySelectorAll('.');
-
+const blocksList = document.querySelectorAll('.tabs-hotel__block');
+const tabsList = document.querySelectorAll('.tabs-hotel__link');
 
 
 tab1.addEventListener('click', () => {
-  tabsHandler(tabsList, blocksList, "someclass", "someclass")
+  tabsHandler(tabsList, blocksList, "_block-summery", tab1.classList[1])
+});
+tab2.addEventListener('click', () => {
+  tabsHandler(tabsList, blocksList, "_block-information", tab2.classList[1])
+});
+tab3.addEventListener('click', () => {
+  tabsHandler(tabsList, blocksList, "_block-rooms", tab3.classList[1])
 });
 
 
