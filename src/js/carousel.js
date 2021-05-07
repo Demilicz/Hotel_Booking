@@ -2,7 +2,7 @@ import  $ from 'jquery';
 
 $(function() {
 
-  $('.carosel').slick({
+  $('.about__slider').slick({
     draggable: false,
     responsive: [
       {

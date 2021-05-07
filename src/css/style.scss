@@ -815,6 +815,169 @@
   }
 }
 
+.about {
+
+  background: rgba(245, 250, 254, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 110px 0 115px 0;
+  }
+
+  &__slider {
+    max-width: 731px;
+    margin-bottom: 70px;
+    position: relative;
+  }
+  .slick-slider {
+
+  .slick-list {
+    overflow: hidden;
+  }
+
+  .slick-track{
+    display: flex;
+  }
+
+  .slick-arrow {
+    font-size: 0;
+    background: rgba(245, 250, 254, 1);
+    width: 10px;
+    height: 17.5px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 150px;
+  }
+
+  .slick-prev {
+      background-image: url('../images/SVG/arrow_prev.svg');
+      left: -190px;
+      z-index: 1;
+
+  }
+  .slick-next {
+    background-image: url('../images/SVG/arrow_next.svg');
+    right: -190px;
+  }
+}
+
+  &__card {
+    max-width: 731px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0px;
+  }
+
+  &__place-img {
+    height: 45px;
+    width: 100%;
+    background: rgba(245, 250, 254, 1);
+  }
+
+  &__name {
+    margin: 54px 97px 10px 97px ;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #EC1F46;
+  }
+
+  &__date {
+    margin:  0 97px 5px 97px;
+    font-size: 10px;
+    line-height: 13px;
+    color: #000000;
+  }
+
+  &__text {
+    margin: 33px 97px 30px 97px;
+    font-size: 12px;
+    line-height: 160%;
+    text-align: justify;
+    color: #333333;
+  }
+}
+
+.form {
+
+  background: linear-gradient( rgba(10, 34, 61, 0.8), rgba(10, 34, 61, 0.8)),  url('../images/bg_form.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  max-height: 260px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 140px;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__right {
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 350px;
+    max-height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  &__input {
+    padding: 22px 33px;
+    max-width: 285px;
+    width: 100%;
+  }
+
+  &__button {
+    padding: 22px 18px;
+    background: #EC1F46;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      color: rgba(130, 130, 130, 1);
+    }
+  }
+}
+
+
+
 
 
 
@@ -927,17 +1090,3 @@
   }
  }
 
-
-// !! Tip for Carousel, if you want to use Carousel you need to add this class below to your
-// !!section and for safety you need to limit your slide-conteiner by max-width. And of course
-// !!you need to add this slide-container in carousel.js, and connect this js file to app.js
-
-// .slick-slider {
-
-//   .slick-list {
-//     overflow: hidden;
-//   }
-//   .slick-track{
-//     display: flex;
-//   }
-// }
